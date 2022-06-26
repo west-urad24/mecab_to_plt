@@ -31,8 +31,10 @@ count_list = []
 #集計した単語の,出現回数を出力
 for term, count in sorted(word_count.items(),key=lambda x:x[1], reverse=True):#降順にソート
     if(term != '名詞'):#結果に「名詞」が出てこないようにする
-        term_list.append(term)
-        count_list.append(count)
+        if(term != '代名詞'):
+            #print(term,'\t',count)
+            term_list.append(term)
+            count_list.append(count)
 
 #上位20件の単語と件数を表示
 N = 20
