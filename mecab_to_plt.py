@@ -36,8 +36,8 @@ for term, count in sorted(word_count.items(),key=lambda x:x[1], reverse=True):#�
             term_list.append(term)
             count_list.append(count)
 
-#上位20件の単語と件数を表示
-N = 20
+#上位N件の単語と件数を表示
+N = int(input('いくつ取得したい？' ))
 term_list = term_list[:N]
 count_list = count_list[:N]
 print('[単語 出現回数]','\n')
