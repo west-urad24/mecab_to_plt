@@ -11,6 +11,7 @@ URLと取得したい件数、13行目のid,classは各自で変更して下さ�
 
 
 
+
 keyword_search_word2mecab2plot.py
 
 ①単語をgoogleで検索して、サイトN件取得する。
